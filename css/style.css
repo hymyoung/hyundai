@@ -26,7 +26,7 @@
 .event__headline .event__subtitle {margin: 12px auto 0;  font-size: 18px;  line-height: 27px;  letter-spacing: -0.45px;  color: #5c6677;  overflow: hidden;  text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical;  text-align: center;}
 
 .event__contents {margin: 80px 0 0 0;}
-.event__contents .event__label { width: auto;  margin: 0 auto; max-width: fit-content; padding: 3px 16px 4px;  background-color: #000; font-size: 16px; font-weight: bold;line-height: 24px; letter-spacing: -0.4px;  text-align: center; color: #9a6f6f;  border-radius: 15px;}
+.event__contents .event__label { width: auto;  margin: 0 auto; max-width: fit-content; padding: 3px 16px 4px;  background-color: #000; font-size: 16px; font-weight: bold;line-height: 24px; letter-spacing: -0.4px;  text-align: center; color: #fff;  border-radius: 15px;}
 .event__contents .event__title--sub { margin: 12px auto 0; font-size: 34px;  color: #1b1e23;  letter-spacing: -0.85px;  line-height: 46px;  font-weight: bold; overflow: hidden;  text-overflow: ellipsis;  -webkit-line-clamp: 2;  -webkit-box-orient: vertical;  text-align: center;} 
 .event__contents .event__desc { margin: 12px auto 0; font-size: 18px; color: #5c6677; letter-spacing: -0.45px;  line-height: 27px;  overflow: hidden;  text-overflow: ellipsis;  -webkit-line-clamp: 2;  -webkit-box-orient: vertical; text-align: center;} 
 
@@ -41,3 +41,7 @@
 .event__image img {width: 100%;}
 .event__box .event__box-title{overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; font-size: 18px; font-weight: bold; line-height: 27px; letter-spacing: -0.45px; text-align: center;  color: #1b1e23;  margin: 0 0 4px;}
 .event__box .event__box-info{overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 18px; line-height: 29px; letter-spacing: -0.5px; text-align: center; color: #3d444f;}
+
+.event__block--gray {background-color: #f9fafb; padding: 48px 0 80px 0;} 
+.brand {}
+.brand .brand__title{margin: 0 auto 24px; font-size: 24px; font-weight: bold; line-height: 36px; letter-spacing: -0.6px; text-align: center; color: #1b1e23;}
