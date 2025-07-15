@@ -5,34 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>현대면세점 IOPE 프로모션</title>
         <link rel="stylesheet" href="../css/common/reset.css">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/common/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../css/style.css">        
+        <script type="text/javascript" src="../js/common/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/common/swiper-bundle.min.js"></script>
+        
     </head>
     <body>
-    <!-- Header -->
-    <!-- <header class="header" role="banner">
-        <div class="header__top" aria-label="사용자 메뉴">
-        <div class="header__logo">
-            <a href="/" aria-label="현대면세점 홈">
-            <img src="/assets/logo-hd.png" alt="현대면세점 로고">
-            </a>
-        </div>
-        <div class="header__user-menu" role="navigation" aria-label="사용자 메뉴">
-            <a href="#" class="header__link">가입</a>
-            <a href="#" class="header__link">로그인</a>
-            <a href="#" class="header__link">고객센터</a>
-            <button class="header__cart-button" aria-label="장바구니">Cart (0)</button>
-        </div>
-        </div>
-        <nav class="gnb" role="navigation" aria-label="주요 메뉴">
-        <ul class="gnb__list">
-            <li class="gnb__item"><a href="#" class="gnb__link" aria-current="page">그리드스크립트</a></li>
-            <li class="gnb__item"><a href="#" class="gnb__link">업체도</a></li>
-            <li class="gnb__item"><a href="#" class="gnb__link">전자상자</a></li>
-            <li class="gnb__item"><a href="#" class="gnb__link">프로모션</a></li>
-        </ul>
-        </nav>
-    </header> -->
-
     <!-- Main Content -->
         <main class="main" role="main">
             <div class="location">
@@ -47,7 +26,9 @@
                       <strong class="">아이오페 단독 프로모션</strong>
                       <div class="box_list" style="display: none;">
                         <ul>
-                          <li class="curr"><a>아이오페 단독 프로모션</a></li>
+                          <li class="curr"><a>구매금액별</a></li>
+                          <li class="curr"><a>구매금액별</a></li>
+                          <li class="curr"><a>구매금액별</a></li>
                         </ul>
                       </div>
                     </div>
@@ -104,13 +85,13 @@
                                         <div class="event__box-content">
                                             <p class="event__box-title" style="color: #A58768;">$60이상 구매시 </p>
                                             <p class="event__box-info">더 클린랩 에이씨 듀 칼라민 토너 + 에센스 + 크림 + 진정 패드 증정 증정</p>
-                                        </div>
+                                        </div>,
                                     </a>
                                 </li>
                             
                             </ul>
                         </div>
-                    </div>
+                    </div>,
                     <div class="event__contents">
                         <p class="event__label" style="background-color: #A58768;">Event 2</p>
                         <h3 class="event__title event__title--sub">금액대별 구매 사은품</h3>
@@ -154,181 +135,185 @@
                 </div>  
                 <div class="event__block event__block--gray">
                     <div class="brand">
-                        <h4 class="brand__title">브랜드관</h4>
-                        <ul class="brand__list">
-                            <li class="brand__item">
-                                <a href="" target="_blank" title="아이오페. Open new window">
-                                    <div class="brand__image">
-                                        <img src="/assets/event1.jpg" alt="아이오페">
-                                        <img src="/assets/event1.jpg" alt="아이오페 로고" class="logo">
-                                    </div>                                    
-                                    <p class="brand__item-title">아이오페</p>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="brand__inner">
+                            <h4 class="brand__title">브랜드관</h4>
+                            <ul class="brand__list">
+                                <li class="brand__item">
+                                    <a href="" target="_blank" title="아이오페. Open new window">
+                                        <div class="brand__image">
+                                            <img src="../assets/images/brand_01.jpg" alt="아이오페" class="bi">
+                                            <img src="../assets/images/bi_1.png" alt="아이오페 로고" class="logo">
+                                        </div>                                    
+                                        <p class="brand__item-title">아이오페</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                         
                     </div>
                     <div class="notice">
-                        <p class="notice__title">유의사항</p>
-                        <ul class="notice__list">
-                            <li class="notice__item">한 ID 당 1일 1회 증정됩니다.</li>
-                            <li class="notice__item">사은품은 중복 증정이 되지 않습니다.</li>
-                            <li class="notice__item">사은품은 디자인 및 구성이 임의로 증정되며, 선택할 수 없습니다.</li>
-                            <li class="notice__item notice__item--important">
-                            사은품의 재고 소진 이후에도 해당 페이지와 관련 배너는 보여질 수 있습니다.
-                            </li>
-                        </ul>                    
+                        <div class="notice__inner">
+                            <p class="notice__title">유의사항</p>
+                            <ul class="notice__list">
+                                <li class="notice__item">한 ID 당 1일 1회 증정됩니다.</li>
+                                <li class="notice__item">사은품은 중복 증정이 되지 않습니다.</li>
+                                <li class="notice__item">사은품은 디자인 및 구성이 임의로 증정되며, 선택할 수 없습니다.</li>
+                                <li class="notice__item notice__item--important">
+                                사은품의 재고 소진 이후에도 해당 페이지와 관련 배너는 보여질 수 있습니다.
+                                </li>
+                            </ul>  
+                        </div>                                          
                     </div>       
                 </div>         
                 <div class="event__block"  id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" >
                     <div class="event__recommend">
                         <h3 class="event__title event__title--left">추천상품</h3>
-                        <div class="plan__recommend slide_type plan__recommend_01">
-                            <div class="product__list swiper pc-plan-recommend-swiper">
+                        <div class="event__recommend-box slide_type event__recommend_01">
+                            <div class="product__list swiper">
                                 <ul class="swiper-wrapper">
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>                     
+                                    <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>   
+                                     <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>           
                                 </ul>
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                             </div>
@@ -337,215 +322,361 @@
                         </div>
                     </div>
                     <div class="event__recommend">
-                        <ul class="tab_panel">
-                            <li data-idx="0" class="li40092 ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active is-active" role="tab" tabindex="-1" aria-controls="tab_ty1"  aria-selected="true" aria-expanded="true">
+                        <ul class="tab__panel">
+                            <li data-idx="0" class="tab__panel-tab is-active" role="tab" tabindex="-1" aria-controls="tab_ty1"  aria-selected="true" aria-expanded="true">
                                 <a href="#tab_ty1" role="presentation" tabindex="0" class="ui-tabs-anchor"aria-selected="true">아우구스투스 바더 </a>
                             </li>
-                            <li data-idx="0" class="li40092 ui-tabs-tab ui-corner-top ui-state-default ui-tab " role="tab" tabindex="-1" aria-controls="tab_ty2" aria-selected="false" aria-expanded="true">
+                            <li data-idx="0" class="tab__panel-tab" role="tab" tabindex="-1" aria-controls="tab_ty2" aria-selected="false" aria-expanded="true">
                                 <a href="#tab_ty2" role="presentation" tabindex="0" class="ui-tabs-anchor"aria-selected="true">아우구스투스 바더 </a>
                             </li>
                         </ul>
                         <h3 class="event__title event__title--left">이런 상품은 어떠세요?</h3>
-                        <div class="plan__recommend slide_type plan__recommend_01">
-                            <div class="product__list swiper pc-plan-recommend-swiper">
+                        <div class="event__recommend-box slide_type event__recommend_01">
+                            <div class="product__list swiper">
                                 <ul class="swiper-wrapper">
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>
-                                <li class="swiper-slide product__item">
-                                    <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=10758250003201">
-                                    <div class="img_w">
-                                        <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
-                                        <div class="on_btn">
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1">로그인</button>
-                                        </div>
-                                        <div class="on_btn_group">
-                                            <button class="btn_inner1 bg_black buyBtn">바로구매</button>
-                                        </div>
-                                        </div>
-                                        <button type="button" class="btn-cart">장바구니 담기</button>
-                                    </div>
-                                    <div class="pro_i">
-                                        <p class="ti_brand">바비브라운</p>
-                                        <p class="tx_ex goosNm">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
-                                        <p class="price1"><strong>40%</strong> <del>$39</del></p>
-                                        <p class="price2">
-                                        <strong data-price="21.25">$21.25</strong> 
-                                        </p>
-                                    </div>
-                                    </a>
-                                </li>                     
+                                    <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>   
+                                     <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="swiper-slide product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>           
                                 </ul>
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                             </div>
-                            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
-                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+                            <div class="swiper-button-prev" role="button" aria-label="Previous slide" ></div>
+                            <div class="swiper-button-next"  role="button" aria-label="Next slide" ></div>
                         </div>
                     </div>                
                 </div>
-                <div class="event__block" id="tabpanel-3" role="tabpanel" aria-labelledby="tab-3" >                
-                    <div class="event__result">
-                        <div class="event__result-list--top">
-                            <div class="event__result-list--left">
-                                <button type="button" class="filter-title">FILTER</button>
-                                <div class="saerch-list-total-text">
-                                    <span>35건</span>
-                                </div>
-                            </div>
-                            <div class="event__result-list--right">
-                                <div class="event__result-list--middle">
-                                    <span>품절제외</span>
-                                    <div class="toggle-switch-wrap">
-                                        <label class="toggle-switch">
-                                            <input class="toggle-switch-input" type="checkbox" >
-                                            <span class="toggle-round"></span>
-                                        </label>
+                <div class="event__block" id="tabpanel-3" role="tabpanel" aria-labelledby="tab-3">   
+                    <div class="event__inner">
+                        <div class="event__result">
+                            <div class="event__result-list--top">
+                                <div class="event__result-list--left">
+                                    <button type="button" class="filter-title">FILTER</button>
+                                    <div class="saerch-list-total-text">
+                                        <span>41건</span>
                                     </div>
                                 </div>
                                 <div class="event__result-list--right">
-                                    <div class="option-change">
-                                        <div class="box-select">
-                                            <div class="wrap-select is-setted">
-                                                <select name="option1">
-                                                    <option value="best">베스트순</option>                                                
-                                                    <option value="md">MD추천순</option>                                                
-                                                    <option value="new">신상품순</option>
-                                                    <option value="priceAsc">낮은가격순</option>
-                                                    <option value="priceDesc">높은가격순</option>
-                                                    <option value="dcRate">높은할인순</option>
-                                                    <option value="grvws">상품평 많은순</option>
-                                                </select>
-                                                <div class="wrap-add-dropdown">
-                                                    <span class="fake-dropdown">상품평 많은순</span>
-                                                    <button class="btn-dropdown active" type="button">베스트순</button>
+                                    <div class="event__result-list--middle">
+                                        <span>품절제외</span>
+                                        <div class="toggle-switch-wrap">
+                                            <label class="toggle-switch">
+                                                <input class="toggle-switch-input" type="checkbox" >
+                                                <span class="toggle-round"></span>
+                                            </label>
+                                        </div>
+                                    </div>                                
+                                    <div class="event__result-list--right">
+                                        <div class="option-change">
+                                            <div class="box-select">
+                                                <div class="wrap-select is-setted">
+                                                    <div class="wrap-add-dropdown">
+                                                        <button class="btn-dropdown active" type="button">베스트순</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>        
-                        </div>                        
-                    </div>
+                                </div>        
+                            </div>                        
+                        </div>
+                        <div class="event__recommend-box slide_type event__recommend_01">
+                            <div class="product__list">
+                                <ul class="">
+                                    <li class="product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product_itme-keyword">MD 키워드 최대 2줄 노출 가능MD 키워드 최대 2줄 노출 가능MD 키워드 최대 2줄 노출 가능</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>   
+                                        <li class="product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li> 
+                                    <li class="product__item">
+                                        <a href=""> 
+                                            <div class="product__item-image">
+                                                <img src="https://cdn.hddfs.com/files/goos/0758/20231020/db7566dd.jpg?sf=webp&amp;RS=340X340" alt="페이셜 트리트먼트 에센스 250ml">
+                                                <div class="on_btn">
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1">로그인</button>
+                                                    </div>
+                                                    <div class="on_btn_group">
+                                                        <button class="btn_inner1 bg_black buyBtn">바로구매</button>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-cart">장바구니 담기</button>
+                                            </div>
+                                            <div class="product__item-spec">
+                                                <p class="product__item-title">바비브라운</p>
+                                                <p class="product__item-desc">상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄 상품명 최대 2줄</p>
+                                                <p class="price1"><strong>40%</strong> <del>$39</del></p>
+                                                <p class="price2">
+                                                <strong data-price="21.25">$21.25</strong> 
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>           
+                                </ul>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                    </div>             
+                   
                 </div>
             </section>           
         </main>
+        <script type="text/javascript" src="../js/common.js"></script>
     </body>
 </html>

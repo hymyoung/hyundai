@@ -37,6 +37,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
     text-decoration: none;	
+	box-sizing: border-box;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -50,6 +52,7 @@ body {
 	font-family:'Noto Sans CJK KR', '본고딕', 'sans-serif', sans-serif; 
 	font-weight:400; 	
 	color:#1b1e23; 
+	
 }
 ol, ul {
 	list-style: none;
