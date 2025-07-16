@@ -1,6 +1,5 @@
 (function () {
   class slideBuilder {
-    // 생성자 함수
     constructor(swiper) {
       this.productSwiper = document.querySelectorAll(".product__list.swiper");
       this.brandSwiper = document.querySelectorAll(".brand__swiper");
@@ -125,7 +124,6 @@
   }
 
   class tabObserver {
-    // 생성자 함수
     constructor() {
       this.tabs = document.querySelectorAll(".event__tab-button button");
       this.tabpanels = document.querySelectorAll(".tabpanel");
@@ -168,12 +166,11 @@
   }
 
   class morePromotion {
-    // 생성자 함수
     constructor() {
       this.location = document.querySelector(".location");
       this.selectBoxBtn = document.querySelector(".location__new strong");
       this.popupOpenBtn = document.querySelector(".btn_more");
-      this.layer = document.querySelector(".layer-dim");
+      this.layer = document.querySelector(".layer-promotion");
       this.closeBtn = document.querySelector(
         ".box-bottom-float .btn-close-layer button"
       );
@@ -236,19 +233,55 @@
   }
 
   class productSet {
-    // 생성자 함수
     constructor(el) {
       this.el = el;
       this.setSwiper = this.el.querySelector(".swiper");
       this.image = this.el.querySelectorAll(".product-set-image");
       this.smallImageWrap = this.el.querySelector(".product-set__small-img");
+      this.openCartBtn = this.el.querySelector(".btn-cart");
+      this.layer = document.querySelector(".layer-cart");
+      this.closeBtn = this.layer.querySelector(".btn-close-layer");
+      this.addCartBtn = this.layer.querySelector(".add-cart");
+      this.cartAlert = this.layer.querySelector(".add-alert");
     }
 
     init() {
       this.setSwiperBuild();
       this.setsmallImage();
+      this.bindEvent();
+    }
+    bindEvent() {
+      this.openCartBtn.addEventListener("click", () => {
+        this.openPopup();
+      });
+      this.closeBtn.addEventListener("click", () => {
+        this.closePopup();
+      });
+      this.addCartBtn.addEventListener("click", () => {
+        this.addCartAlert();
+      });
+    }
+    openPopup() {
+      console.log();
+      this.layer.classList.add("is-show");
+      setTimeout(() => {
+        this.layer.querySelector(".box-bottom-float").classList.add("is-up");
+      }, 10);
+    }
+    closePopup() {
+      if (this.layer.classList.contains("is-show")) {
+        this.layer.classList.remove("is-show");
+        this.layer.querySelector(".box-bottom-float").classList.remove("is-up");
+      }
     }
 
+    addCartAlert() {
+      console.log(this.cartAlert);
+      this.cartAlert.style.display = "block";
+      setTimeout(() => {
+        this.cartAlert.style.display = "none";
+      }, 1000);
+    }
     setsmallImage() {
       const smallItems = this.image;
       let mergedHTML = "";
